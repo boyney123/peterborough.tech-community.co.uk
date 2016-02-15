@@ -2,7 +2,7 @@
 layout: post
 title:  "Using NodeJS in Peterborough"
 cover: https://c2.staticflickr.com/4/3434/3251868894_c44d919bd5.jpg
-date:   2016-02-14 21:44:56 +0000
+date:   2016-02-12 21:44:56 +0000
 categories: tech
 subtitle: Helping
 blurb: What are the best practices? Can we learn from each other?

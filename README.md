@@ -5,3 +5,5 @@
 TODO:
 
 - Add discuss
+- Add GA
+- Add the ability to sticky posts
