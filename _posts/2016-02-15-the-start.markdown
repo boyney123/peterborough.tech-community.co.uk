@@ -38,9 +38,7 @@ I reached out to the community and got a good number of people that said they we
 
 So hopefully this is just the **start of this open source project**.
 
-Contributing takes minutes, if you would like to contribute check it out
 
-<span class="github-contribute"><a href='/contribute' class="button button-primary">Contribute</a></span>
 
 
 
