@@ -1,0 +1,57 @@
+.post-list {
+  .post {
+
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+    border-radius: 3px;
+    padding: 20px;
+
+    .post__title {
+      margin-top: 20px;
+    }
+
+    .post__author {
+      float: right;
+    }
+
+    .post__author-name {
+      display: inline-block;
+      font-size: 10px;
+      color: grey;
+    }
+
+    .post__author-image {
+      height: 36px;
+      width: 36px;
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 100%;
+      background-size: cover;
+      background: #f0f0f0;
+      background-position: center center;
+    }
+
+    .post__date {
+      margin: 10px 0;
+    }
+
+    .post__meta {
+      font-size: $small-font-size;
+      color: $grey-color;
+    }
+
+    .post__link {
+      display: block;
+      font-size: 24px;
+      color: #020733;
+      line-height: 1.2;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", sans-serif;
+      letter-spacing: 0;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+  }
+}
+

@@ -1,0 +1,82 @@
+---
+layout: default
+---
+
+<div class="site-introduction">
+    <h1 class="site-introduction__title">Moving the community forward</h1>
+    <h2 class="site-introduction__subtitle">Peterborough.tech-community is a group of IT professionals sharing experinces, passion and knowledge.  </h2>
+    <h3 class="site-introduction__description">Free and open source blog, run for IT professionals  by IT professionals</h3>
+    <a href="/contribute" class="button button-primary">Contribute</a>
+</div>
+
+
+
+<div class="page-content">
+
+    <div class="wrapper">
+
+        <div class="site-reasons">
+            <div class="site-reasons__reason">
+                <i class="fa fa-book fa-lg site-reasons__icon"></i>
+                <span class="site-reasons__title">Learn together</span>
+            </div>
+            <div class="site-reasons__reason">
+                <i class="fa fa-share-alt fa-lg site-reasons__icon"></i>
+                <span class="site-reasons__title">Share together</span>
+            </div>
+            <div class="site-reasons__reason">
+                <i class="fa fa-users fa-lg site-reasons__icon"></i>
+                <span class="site-reasons__title">Grow together</span>
+            </div>
+        </div>
+
+    <div class="home">
+
+        <ul class="post-list">
+
+            {% for post in paginator.posts %}
+
+            {% assign author = site.data.authors.[post.author] %}
+
+              <li class="post">
+
+              {% if author.name %}
+                <div class="post__author">
+                    <div class="post__author-name">
+                        <span>by {{author.name}}</span>
+                    </div>
+
+                    <div class="post__author-image" style="background-image: url('https://pbs.twimg.com/profile_images/660943257795457030/igA_joVD_bigger.jpg')"></div>
+
+                </div>
+                  {% endif %}
+
+                <span class="post__meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+                <h2 class="post__title">
+                  <a class="post__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+
+                  {% if author.name %}
+                    <p>{{post.blurb}}</p>
+                  {% endif %}
+
+              </li>
+            {% endfor %}
+         </ul>
+
+        <!-- Pagination links -->
+        <div class="pagination">
+            {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path }}" class="button button-navigation">Previous</a>
+            {% else %}
+            {% endif %}
+            {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}" class="button button-navigation">Next</a>
+            {% else %}
+            {% endif %}
+        </div>
+
+        </div>
+    </div>
+</div>

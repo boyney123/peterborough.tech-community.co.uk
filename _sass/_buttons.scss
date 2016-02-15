@@ -1,0 +1,23 @@
+.button{
+
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px 16px 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+
+  &.button-primary{
+    background: #4857DE;
+    box-shadow: #7379B1 0 2px 0 0;
+    &:hover{
+      background: #737fde;
+    }
+  }
+
+  &.button-navigation{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #020733;
+    color: #020733;
+    padding: 15px 35px;
+  }
+}
