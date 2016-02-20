@@ -143,15 +143,18 @@ pre {
 
 .site-introduction {
   background: #020733;
-  padding: 60px 0 50px;
+  padding: 60px 0 20px;
   background-size: cover;
   background-position: 50% 0;
   text-align: center; }
+  .site-introduction.site-introduction--with-button {
+    padding-bottom: 50px; }
+    @media screen and (max-width: 991px) {
+      .site-introduction.site-introduction--with-button {
+        padding-bottom: 40px; } }
   @media screen and (max-width: 991px) {
     .site-introduction {
-      padding-top: 20px;
-      padding-bottom: 40px;
-      margin-top: 40px; } }
+      padding-top: 50px; } }
   .site-introduction .site-introduction__title {
     color: white;
     line-height: 1.2;
@@ -159,6 +162,9 @@ pre {
     letter-spacing: 0;
     font-weight: 700;
     font-style: normal; }
+    @media screen and (max-width: 600px) {
+      .site-introduction .site-introduction__title {
+        font-size: 24px; } }
   .site-introduction .site-introduction__subtitle {
     color: white;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",sans-serif;
@@ -169,6 +175,9 @@ pre {
     margin: 20px auto;
     padding: 0 50px;
     font-size: 24px; }
+    @media screen and (max-width: 600px) {
+      .site-introduction .site-introduction__subtitle {
+        font-size: 16px; } }
   .site-introduction .site-introduction__description {
     padding: 0 50px;
     color: rgba(255, 255, 255, 0.65);
@@ -178,6 +187,9 @@ pre {
     font-weight: 300;
     font-style: normal;
     margin-bottom: 40px; }
+    @media screen and (max-width: 600px) {
+      .site-introduction .site-introduction__description {
+        font-size: 14px; } }
 
 .pagination {
   text-align: center; }

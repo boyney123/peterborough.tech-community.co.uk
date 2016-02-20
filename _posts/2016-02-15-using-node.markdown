@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Using NodeJS in Peterborough"
-cover: https://c2.staticflickr.com/4/3434/3251868894_c44d919bd5.jpg
+cover: https://s3.amazonaws.com/codementor_content/nodejs_logo_green.jpg
 date:   2016-02-12 21:44:56 +0000
 categories: tech
 subtitle: Helping

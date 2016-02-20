@@ -202,15 +202,22 @@ pre {
 .site-introduction{
 
   background:#020733;
-  padding: 60px 0 50px;
+  padding: 60px 0 20px;
   background-size: cover;
   background-position: 50% 0;
   text-align: center;
 
+  &.site-introduction--with-button{
+    padding-bottom:50px;
+
+    @include media-query(991px) {
+      padding-bottom: 40px;
+    }
+
+  }
+
   @include media-query(991px) {
-    padding-top: 20px;
-    padding-bottom: 40px;
-    margin-top: 40px;
+    padding-top: 50px;
   }
 
   .site-introduction__title{
@@ -220,6 +227,11 @@ pre {
     letter-spacing: 0;
     font-weight: 700;
     font-style: normal;
+
+    @include media-query($on-palm) {
+      font-size: 24px;
+    }
+
   }
 
   .site-introduction__subtitle{
@@ -232,6 +244,11 @@ pre {
     margin: 20px auto;
     padding: 0 50px;
     font-size: 24px;
+
+    @include media-query($on-palm) {
+      font-size: 16px;
+    }
+
   }
 
 
@@ -244,7 +261,14 @@ pre {
     font-weight: 300;
     font-style: normal;
     margin-bottom: 40px;
+
+    @include media-query($on-palm) {
+      font-size: 14px;
+    }
+
   }
+
+
 
 }
 
