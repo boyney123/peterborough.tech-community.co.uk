@@ -230,6 +230,7 @@ pre {
 
     @include media-query($on-palm) {
       font-size: 24px;
+      padding: 0 5px;
     }
 
   }
