@@ -3,20 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3d4f93e6-770c-40fc-a97a-79fd637e273c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/icon-github.html" afterPath="$PROJECT_DIR$/_includes/icon-github.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/contribute.html" afterPath="$PROJECT_DIR$/_layouts/contribute.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-02-15-using-node.markdown" afterPath="$PROJECT_DIR$/_posts/2016-02-15-using-node.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/_base.scss" afterPath="$PROJECT_DIR$/_sass/_base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/about/index.html" afterPath="$PROJECT_DIR$/_site/about/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/contribute-email/index.html" afterPath="$PROJECT_DIR$/_site/contribute-email/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/contribute-github/index.html" afterPath="$PROJECT_DIR$/_site/contribute-github/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/contribute/index.html" afterPath="$PROJECT_DIR$/_site/contribute/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/css/main.css" afterPath="$PROJECT_DIR$/_site/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/feed.xml" afterPath="$PROJECT_DIR$/_site/feed.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/tech/2016/02/12/using-node.html" afterPath="$PROJECT_DIR$/_site/tech/2016/02/12/using-node.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/tech/2016/02/14/the-start.html" afterPath="$PROJECT_DIR$/_site/tech/2016/02/14/the-start.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="peterborough.tech-community.co.uk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="contribute.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="contribute.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_layouts/contribute.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="59.375">
-              <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.6052632">
+              <caret line="111" column="140" selection-start-line="111" selection-start-column="140" selection-end-line="111" selection-end-column="140" />
               <folding />
             </state>
           </provider>
@@ -99,12 +88,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2016-02-15-using-node.markdown" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2016-02-15-using-node.markdown" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2016-02-15-using-node.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.11627907">
-                <caret line="3" column="72" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
+              <first_editor vertical-scroll-proportion="0.5426357">
+                <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -146,13 +135,13 @@
         <option value="$PROJECT_DIR$/_includes/_google-analytics.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/_layouts/contribute.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/_includes/footer.html" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_includes/icon-github.html" />
         <option value="$PROJECT_DIR$/_sass/_base.scss" />
         <option value="$PROJECT_DIR$/_posts/2016-02-15-using-node.markdown" />
+        <option value="$PROJECT_DIR$/_layouts/contribute.html" />
       </list>
     </option>
   </component>
@@ -761,14 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/contribute.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="59.375">
-          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/icon-github.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -788,8 +769,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2016-02-15-using-node.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.11627907">
-            <caret line="3" column="72" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
+          <first_editor vertical-scroll-proportion="0.5426357">
+            <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
             <folding />
           </first_editor>
           <second_editor />
@@ -803,6 +784,14 @@
       </provider>
       <provider editor-type-id="MultiMarkdownFxPreviewEditor">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/contribute.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6052632">
+          <caret line="111" column="140" selection-start-line="111" selection-start-column="140" selection-end-line="111" selection-end-column="140" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
