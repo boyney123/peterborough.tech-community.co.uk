@@ -22,7 +22,7 @@ Whilst I was doing this it got me thinking of another new side project…(one I 
 
 With what I have learnt, I know how to manage it all technically but there are a few main issues that are out of my control:
 
--	Can I find people that would contribute at least 1 blog every 3 or 4 months?
+-	Can I find people that would contribute?
 -	Would people be interested?
 -	Do people care?
 
