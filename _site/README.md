@@ -5,4 +5,5 @@
 TODO:
 
 - Add the ability to sticky posts
+
 - Stop commiting the _site directory. Build on CI 
