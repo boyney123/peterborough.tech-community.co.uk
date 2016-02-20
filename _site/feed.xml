@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Peterborough.tech-community.co.uk</title>
+    <description>Free and open source blog for IT professionals in Peterborough. Populated by anybody thats has any kind of interest in IT.
+We are always looking for contributors.
+</description>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 20 Feb 2016 09:42:16 +0000</pubDate>
+    <lastBuildDate>Sat, 20 Feb 2016 09:42:16 +0000</lastBuildDate>
+    <generator>Jekyll v3.1.0</generator>
+    
+      <item>
+        <title>Building Peterborough.tech-community.co.uk</title>
+        <description>&lt;p&gt;I recently moved my &lt;a href=&quot;http://www.davidboyne.co.uk&quot;&gt;own blog platform&lt;/a&gt; over to &lt;a href=&quot;https://www.digitalocean.com/&quot;&gt;DigitalOcean&lt;/a&gt; and &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; and enjoyed the experience of learning new things along the way.&lt;/p&gt;
+
+&lt;p&gt;I was learning about DNS registry’s, &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-virtual-hosts-server-blocks-on-ubuntu-12-04-lts--3&quot;&gt;how to host (multiple) websites on cheap digital ocean boxes&lt;/a&gt; and also how to quickly turn out cool static websites using ruby’s Jekyll platform. Also learnt a cool new method that allows me to host a &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-set-up-automatic-deployment-with-git-with-a-vps&quot;&gt;git server on the same box and allow me to push up changes straight to live within seconds&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Whilst I was doing this it got me thinking of another new side project…(one I can hopefully complete)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A community driven blog, free and open source.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-project&quot;&gt;The Project&lt;/h2&gt;
+
+&lt;p&gt;With what I have learnt, I know how to manage it all technically but there are a few main issues that are out of my control:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Can I find people that would contribute at least 1 blog every 3 or 4 months?&lt;/li&gt;
+  &lt;li&gt;Would people be interested?&lt;/li&gt;
+  &lt;li&gt;Do people care?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These are the areas I will try to focus on within the next few months. How can I drive people to share, learn and grow within the local IT community?&lt;/p&gt;
+
+&lt;h2 id=&quot;reaching-out-and-gaining-interest&quot;&gt;Reaching out and gaining interest&lt;/h2&gt;
+
+&lt;p&gt;Every so often I run &lt;a href=&quot;http://www.meetup.com/Agile-Peterborough/&quot;&gt;IT events in Peterborough from speakers to workshops&lt;/a&gt;. Through this I have met a lot of experienced and interesting people that all live locally within the area.&lt;/p&gt;
+
+&lt;p&gt;So I wondered if any of the people I know from work and hosting these events would be interesting in contributing to this open source project?&lt;/p&gt;
+
+&lt;p&gt;I reached out to the community and got a good number of people that said they were interested and would help out!&lt;/p&gt;
+
+&lt;p&gt;So hopefully this is just the &lt;strong&gt;start of this open source project&lt;/strong&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 14 Feb 2016 21:44:56 +0000</pubDate>
+        <link>http://yourdomain.com/tech/2016/02/14/the-start.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/tech/2016/02/14/the-start.html</guid>
+        
+        
+        <category>tech</category>
+        
+      </item>
+    
+      <item>
+        <title>Using NodeJS in Peterborough</title>
+        <description>&lt;p&gt;I currently write a lot of NodeJS at Comparethemarket and wondered if there are any other local companies also using NodeJS?&lt;/p&gt;
+
+&lt;p&gt;Maybe we could discuss some best practices or share ideas on how to build enterprise Node applications?&lt;/p&gt;
+
+&lt;p&gt;If you could be interested start the discuss conversation below.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 12 Feb 2016 21:44:56 +0000</pubDate>
+        <link>http://yourdomain.com/tech/2016/02/12/using-node.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/tech/2016/02/12/using-node.html</guid>
+        
+        
+        <category>tech</category>
+        
+      </item>
+    
+  </channel>
+</rss>
