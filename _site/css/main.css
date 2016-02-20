@@ -237,7 +237,6 @@ pre {
 
 .blog-cover {
   background-size: cover;
-  background-position: 0 -40px;
   height: 400px;
   background-repeat: no-repeat; }
   @media screen and (max-width: 800px) {

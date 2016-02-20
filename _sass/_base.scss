@@ -335,7 +335,6 @@ pre {
 
 .blog-cover{
   background-size: cover;
-  background-position: 0 -40px;
   height:400px;
   background-repeat: no-repeat;
   @include media-query($on-laptop) {
