@@ -68,8 +68,11 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: #2a7ae2;
   text-decoration: none; }
+  a:visited {
+    color: #1756a9; }
   a:hover {
-    color: #111; }
+    color: #111;
+    text-decoration: underline; }
 
 /**
  * Blockquotes
@@ -141,112 +144,6 @@ pre {
   .icon > svg path {
     fill: #828282; }
 
-.site-introduction {
-  background: #020733;
-  padding: 60px 0 20px;
-  background-size: cover;
-  background-position: 50% 0;
-  text-align: center; }
-  .site-introduction.site-introduction--with-button {
-    padding-bottom: 50px; }
-    @media screen and (max-width: 991px) {
-      .site-introduction.site-introduction--with-button {
-        padding-bottom: 40px; } }
-  @media screen and (max-width: 991px) {
-    .site-introduction {
-      padding-top: 50px; } }
-  .site-introduction .site-introduction__title {
-    color: white;
-    line-height: 1.2;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",sans-serif;
-    letter-spacing: 0;
-    font-weight: 700;
-    font-style: normal; }
-    @media screen and (max-width: 600px) {
-      .site-introduction .site-introduction__title {
-        font-size: 24px;
-        padding: 0 5px; } }
-  .site-introduction .site-introduction__subtitle {
-    color: white;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",sans-serif;
-    letter-spacing: 0;
-    font-weight: 300;
-    font-style: normal;
-    max-width: 620px;
-    margin: 20px auto;
-    padding: 0 50px;
-    font-size: 24px; }
-    @media screen and (max-width: 600px) {
-      .site-introduction .site-introduction__subtitle {
-        font-size: 16px; } }
-  .site-introduction .site-introduction__description {
-    padding: 0 50px;
-    color: rgba(255, 255, 255, 0.65);
-    font-size: 18px;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",sans-serif;
-    letter-spacing: 0;
-    font-weight: 300;
-    font-style: normal;
-    margin-bottom: 40px; }
-    @media screen and (max-width: 600px) {
-      .site-introduction .site-introduction__description {
-        font-size: 14px; } }
-
-.pagination {
-  text-align: center; }
-
-.site-reasons {
-  display: flex;
-  -webkit-justify-content: space-between;
-  /* Safari */
-  justify-content: space-between;
-  margin-bottom: 30px;
-  text-align: center; }
-  .site-reasons.site-reasons--fill {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: inherit;
-    /* Safari */
-    justify-content: inherit;
-    margin: 0 0 5px 0; }
-    .site-reasons.site-reasons--fill .site-reasons__reason {
-      width: 50%;
-      margin-right: 5px; }
-  .site-reasons .site-reasons__reason {
-    background: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.04);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
-    border-radius: 3px;
-    padding: 20px 20px 10px; }
-  .site-reasons .site-reasons__icon {
-    font-size: 50px;
-    color: #3E91C2; }
-  .site-reasons .site-reasons__title {
-    margin: 15px 0 0 0;
-    display: block;
-    font-weight: bold; }
-
-.site-reason-subtitle {
-  margin-top: 10px; }
-
-.center {
-  text-align: center; }
-
-.email-contribute, .github-contribute {
-  margin-top: 30px;
-  display: block; }
-
-.blog-cover {
-  background-size: cover;
-  height: 400px;
-  background-repeat: no-repeat; }
-  @media screen and (max-width: 800px) {
-    .blog-cover {
-      height: 300px; } }
-  @media screen and (max-width: 600px) {
-    .blog-cover {
-      height: 250px; } }
-
 /**
  * Site header
  */
@@ -265,9 +162,6 @@ pre {
   float: left; }
   .site-title, .site-title:visited {
     color: #424242; }
-  @media screen and (max-width: 410px) {
-    .site-title {
-      font-size: 16px; } }
 
 .site-nav {
   float: right;
@@ -319,10 +213,7 @@ pre {
  */
 .site-footer {
   border-top: 1px solid #e8e8e8;
-  padding: 30px 0;
-  background: #020733; }
-  .site-footer h2 {
-    color: #E2E2E2; }
+  padding: 30px 0; }
 
 .footer-heading {
   font-size: 18px;
@@ -384,54 +275,27 @@ pre {
   .post-list > li {
     margin-bottom: 30px; }
 
+.post-meta {
+  font-size: 14px;
+  color: #828282; }
+
+.post-link {
+  display: block;
+  font-size: 24px; }
+
 /**
  * Posts
  */
-.post-footer {
-  border-top: 1px solid #EAEAEA;
-  border-bottom: 1px solid #EAEAEA;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  font-size: 12px;
-  color: #848484;
-  text-align: center; }
-  .post-footer p {
-    margin: 0; }
-  .post-footer p:nth-child(1) {
-    margin-bottom: 10px; }
+.post-header {
+  margin-bottom: 30px; }
 
 .post-title {
   font-size: 42px;
   letter-spacing: -1px;
-  line-height: 1;
-  margin: 20px 0; }
+  line-height: 1; }
   @media screen and (max-width: 800px) {
     .post-title {
       font-size: 36px; } }
-  .post-title:after {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 2px;
-    background: #ddd;
-    margin: 30px 0 0 0; }
-
-.post-meta {
-  color: #848484;
-  font-size: 13px;
-  text-transform: uppercase;
-  margin-bottom: 0.3em;
-  font-weight: 400;
-  letter-spacing: 1px; }
-
-.post-subtitle {
-  font-size: 32px;
-  margin: 0.2em 0;
-  color: #848484;
-  font-weight: 300; }
-  @media screen and (max-width: 800px) {
-    .post-subtitle {
-      font-size: 26px; } }
 
 .post-content {
   margin-bottom: 30px; }
@@ -591,59 +455,3 @@ pre {
     color: #008080; }
   .highlight .il {
     color: #099; }
-
-.button {
-  color: #ffffff;
-  cursor: pointer;
-  padding: 10px 16px 8px 16px;
-  border-radius: 6px;
-  text-decoration: none; }
-  .button.button-primary {
-    background: #EA0E4C;
-    box-shadow: #ea6e97 0 2px 0 0; }
-    .button.button-primary:hover {
-      background: #ea4e8a;
-      color: white; }
-  .button.button-navigation {
-    background-color: transparent;
-    border: 1px solid #020733;
-    color: #020733;
-    padding: 15px 35px; }
-
-.post-list .post {
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.04);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
-  border-radius: 3px;
-  padding: 20px; }
-  .post-list .post .post__title {
-    margin-top: 20px; }
-  .post-list .post .post__author {
-    float: right; }
-  .post-list .post .post__author-name {
-    display: inline-block;
-    font-size: 10px;
-    color: grey; }
-  .post-list .post .post__author-image {
-    height: 36px;
-    width: 36px;
-    display: inline-block;
-    vertical-align: middle;
-    border-radius: 100%;
-    background-size: cover;
-    background: #f0f0f0;
-    background-position: center center; }
-  .post-list .post .post__date {
-    margin: 10px 0; }
-  .post-list .post .post__meta {
-    font-size: 14px;
-    color: #828282; }
-  .post-list .post .post__link {
-    display: block;
-    font-size: 24px;
-    color: #020733;
-    line-height: 1.2;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", sans-serif;
-    letter-spacing: 0;
-    font-weight: 700;
-    font-style: normal; }
