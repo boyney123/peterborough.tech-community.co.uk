@@ -2,66 +2,22 @@
 layout: default
 ---
 
-<div class="site-introduction site-introduction--with-button">
-    <h1 class="site-introduction__title">Learn, grow & share together.</h1>
-    <h2 class="site-introduction__subtitle">People sharing experinces, passion and knowledge.</h2>
-    <h3 class="site-introduction__description">Community driven open source blog.</h3>
-    <a href="/contribute" class="button button-primary">Contribute</a>
-</div>
+<div class="home">
 
+  <h1 class="page-heading">Posts</h1>
 
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-<div class="page-content">
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-    <div class="wrapper">
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-    <div class="home">
-
-        <ul class="post-list">
-
-            {% for post in paginator.posts %}
-
-            {% assign author = site.data.authors.[post.author] %}
-
-              <li class="post">
-
-              {% if author.name %}
-                <div class="post__author">
-                    <div class="post__author-name">
-                        <span>by {{author.name}}</span>
-                    </div>
-
-                    <div class="post__author-image" style="background-image: url('https://pbs.twimg.com/profile_images/660943257795457030/igA_joVD_bigger.jpg')"></div>
-
-                </div>
-                  {% endif %}
-
-                <span class="post__meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-                <h2 class="post__title">
-                  <a class="post__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </h2>
-
-                  {% if author.name %}
-                    <p>{{post.blurb}}</p>
-                  {% endif %}
-
-              </li>
-            {% endfor %}
-         </ul>
-
-        <!-- Pagination links -->
-        <div class="pagination">
-            {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path }}" class="button button-navigation">Previous</a>
-            {% else %}
-            {% endif %}
-            {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path }}" class="button button-navigation">Next</a>
-            {% else %}
-            {% endif %}
-        </div>
-
-        </div>
-    </div>
 </div>

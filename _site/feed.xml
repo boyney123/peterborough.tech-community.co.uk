@@ -1,15 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Peterborough.tech-community.co.uk</title>
-    <description>Free and open source blog for IT professionals in Peterborough. Populated by anybody thats has any kind of interest in IT.
-We are always looking for contributors.
+    <title>Your awesome title</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 21 Feb 2016 11:18:11 +0000</pubDate>
-    <lastBuildDate>Sun, 21 Feb 2016 11:18:11 +0000</lastBuildDate>
-    <generator>Jekyll v3.1.0</generator>
+    <pubDate>Wed, 09 Mar 2016 23:04:19 +0000</pubDate>
+    <lastBuildDate>Wed, 09 Mar 2016 23:04:19 +0000</lastBuildDate>
+    <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 09 Mar 2016 23:04:16 +0000</pubDate>
+        <link>http://yourdomain.com/jekyll/update/2016/03/09/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/03/09/welcome-to-jekyll.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Lets talk Docker</title>
+        <description>&lt;p&gt;I had a conversation the other day with some guys who manage the on-premise infrastructure and I mentioned we were using Docker. This produced a raft of questions like “What’s Docker?”, “What’s the point of Docker”?, “Isn’t that just what VM’s are?”, “What’s a Container?” etc etc.&lt;/p&gt;
+
+&lt;p&gt;I had to hold back on diving into the technical benefits of Micro-services, Containerization, and Docker as I mentally recalled a similar conversation I had with a non-technical colleague who’s eyes quickly glazed over as I barreled headlong into described everything I know about this kind of stuff.&lt;/p&gt;
+
+&lt;p&gt;I started with a quick sketch about the differences between deploying an application on a regular server to what that looks like if it’s
+deployed in a container and how all this is different to what these guys see every day. I talked about it being open-source and described how quick it was to get started and deploy a basic “Hello World” app and see the results in a browser.&lt;/p&gt;
+
+&lt;p&gt;This was great because they were bought in enough at this point to organize some time to see how it worked and deploy that “Hello World” app for themselves. What was really interesting was the spin off conversation it sparked about a whole bunch of other stuff that I really wasn’t expecting. Stuff like cost savings, standardization, utilization of resources and speed to deploy and the like. Wow! Half an hour ago these guys had no idea that Docker even existed!&lt;/p&gt;
+
+&lt;p&gt;It’s that conversation that prompted me to write this post; I take it for granted that people know what Docker is because I live and breathe it everyday but that’s (obviously) not true for everyone.&lt;/p&gt;
+
+&lt;p&gt;Ok, lets talk Docker. So the guys at Docker have kind of a mantra which is BUILD, SHIP, RUN. You can BUILD your application without worrying about stuff like environment, operating system or language. It lets you SHIP that application from the registry managing it through to distribution via a consistent UI and finally RUN and deploy that application at scale on whatever platform or provider you feel like. Cool right?&lt;/p&gt;
+
+&lt;p&gt;But what is of real interest is that Docker allows you to concentrate on what you as a developer are good at i.e. writing great code, while it takes care of the infrastructure bit allowing you to use whatever platform suits you best to optimize infrastructure resources, standardize environments and at a stroke reduce that all important time to market thus increasing the ‘heartbeat’ of a tech company - i.e. how often it deploys new features to its customers.&lt;/p&gt;
+
+&lt;p&gt;Docker enables users to run their containers wherever they please either in a Cloud or on-premise, so you’re not locked into a vendor or Cloud provider. You can deploy your containers to any Docker host on any infrastructure from Amazon, Google, or Azure to your datacenter servers or even your laptop!&lt;/p&gt;
+
+&lt;p&gt;Standardization and Resource Consolidation are also a major advantages; easily setup, reproduce, manage, update and distribute new environments. With Docker you can run as many containers as your infrastructure can handle. Just package your application and all it’s dependencies into a single container and it removes all the usual inconsistencies between environments allowing you to run the same container in any environment. Docker also plays nicely with all the popular CI/CD pipelines which is great for productivity and efficient deployments.&lt;/p&gt;
+
+&lt;p&gt;So whatever the problem is you’re trying to solve, large or small, Docker is a great way to spike out that mini project or deploy your enterprise web application. Google uses Docker extensively and spins up millions of containers a week.&lt;/p&gt;
+
+&lt;p&gt;So like the guys I was talking to I hope this has sparked your interest to go find out more about Docker and Containerization. It’s a really cool way to get your application out there but it also has a bunch of added benefits that can help drive down your infrastructure &amp;amp; deployment costs, standardize your environments and reduce the time it takes to get those cool new features in front of your customers.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Find out more at: https://www.docker.com/&lt;/td&gt;
+      &lt;td&gt;https://docs.docker.com/&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Wed, 09 Mar 2016 22:29:44 +0000</pubDate>
+        <link>http://yourdomain.com/tech/2016/03/09/sb-lets-talk-docker.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/tech/2016/03/09/sb-lets-talk-docker.html</guid>
+        
+        
+        <category>tech</category>
+        
+      </item>
     
       <item>
         <title>Building Peterborough.tech-community.co.uk</title>
