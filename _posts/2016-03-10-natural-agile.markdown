@@ -2,7 +2,7 @@
 layout: post
 title:  "Natural Agile - Let's take agile back"
 cover: /assets/covers/path.jpg
-date:   2016-03-10 10:55:30 +0000
+date:   2016-03-10 14:55:30 +0000
 categories: tech
 subtitle: Natural Agile
 blurb: Fellow Humans, At this profound point in my agile journey I look around me and despair as I witness organisation after organisation drowning in a sea of confusion about what agile is and what it is not... 
