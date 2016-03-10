@@ -632,7 +632,8 @@ pre {
     border-radius: 100%;
     background-size: cover;
     background: #f0f0f0;
-    background-position: center center; }
+    background-position: center center;
+    background-size: contain; }
   .post-list .post .post__date {
     margin: 10px 0; }
   .post-list .post .post__meta {
