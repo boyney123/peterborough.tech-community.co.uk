@@ -14,3 +14,8 @@ Zee:
 Anton LeMercier:
     name : Anton LeMercier
     photo: "./assets/authors/anton.jpg"
+
+Neil Studd:
+    name: Neil Studd
+    bio: Senior Test Engineer at Compare The Market
+    photo: "https://pbs.twimg.com/profile_images/617723231181668352/BKznqZyy_400x400.jpg"
