@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A new world for testers"
-cover: http://radicaldevelopment.net/wp-content/uploads/2013/05/googledorks.jpg
+cover: http://sinaiandsynapses.org/wp-content/uploads/2013/07/Earth-from-Space-at-Sunrise-HD-Crop.jpg
 date:   2016-03-11 08:00:00 +0000
 categories: tech
 subtitle: Testing
