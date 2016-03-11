@@ -10,3 +10,8 @@ Stewart Barrett:
 Zee:
     name : Zee Ahmed
     photo: "./assets/authors/zee.jpg"
+
+Neil Studd:
+    name: Neil Studd
+    bio: Senior Test Engineer at Compare The Market
+    photo: "https://pbs.twimg.com/profile_images/617723231181668352/BKznqZyy_400x400.jpg"
