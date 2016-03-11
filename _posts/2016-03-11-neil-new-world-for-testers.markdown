@@ -5,7 +5,7 @@ cover: http://radicaldevelopment.net/wp-content/uploads/2013/05/googledorks.jpg
 date:   2016-03-11 08:00:00 +0000
 categories: tech
 subtitle: Testing
-blurb: Manipulating Google to find what you really want.
+blurb: A tester's job role is fast changing - how do you keep pace?
 
 author: Neil Studd
 ---
