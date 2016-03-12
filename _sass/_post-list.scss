@@ -11,6 +11,9 @@
       margin-top: 20px;
       a{
         font-size: 31px;
+        @include media-query($on-palm) {
+          font-size: 20px;
+        }
       }
     }
 
@@ -34,11 +37,17 @@
     .post__blurb{
       font-size: 18px;
       color: rgba(0,0,0,.44);
+      @include media-query($on-palm) {
+        font-size: 14px;
+      }
     }
     
     .post__read-more{
       font-size:14px;
       color: #D6D6D6;
+      @include media-query($on-palm) {
+        font-size: 10px;
+      }
     }
 
     .post__author-image {
