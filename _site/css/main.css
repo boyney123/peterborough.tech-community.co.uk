@@ -618,12 +618,24 @@ pre {
   padding: 20px; }
   .post-list .post .post__title {
     margin-top: 20px; }
+    .post-list .post .post__title a {
+      font-size: 31px; }
   .post-list .post .post__author {
     float: right; }
+  .post-list .post .post__cover {
+    margin-top: 25px; }
+    .post-list .post .post__cover img {
+      max-height: 200px; }
   .post-list .post .post__author-name {
     display: inline-block;
     font-size: 10px;
     color: grey; }
+  .post-list .post .post__blurb {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.44); }
+  .post-list .post .post__read-more {
+    font-size: 14px;
+    color: #D6D6D6; }
   .post-list .post .post__author-image {
     height: 36px;
     width: 36px;

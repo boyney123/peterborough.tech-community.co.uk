@@ -25,6 +25,8 @@ layout: default
 
               <li class="post">
 
+              <a class="post__link" href="{{ post.url | prepend: site.baseurl }}">
+
               {% if author.name %}
                 <div class="post__author">
                     <div class="post__author-name">
@@ -38,13 +40,23 @@ layout: default
 
                 <span class="post__meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
+                {% if post.cover %}
+                    <div class="post__cover">
+                      <img src="{{post.cover}}" alt="">
+                    </div>
+                {% endif %}
+
                 <h2 class="post__title">
                   <a class="post__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </h2>
 
-                  {% if author.name %}
-                    <p>{{post.blurb}}</p>
-                  {% endif %}
+                 {% if author.name %}
+                    <p class="post__blurb">{{post.blurb}}</p>
+                 {% endif %}
+
+                 <a class="post__read-more" href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
+
+              </a>
 
               </li>
             {% endfor %}
