@@ -455,6 +455,9 @@ pre {
       .post-content h4 {
         font-size: 18px; } }
 
+.post-share {
+  margin-bottom: 20px; }
+
 /**
  * Syntax highlighting styles
  */
