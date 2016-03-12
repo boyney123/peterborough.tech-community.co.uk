@@ -7,11 +7,17 @@ layout: default
 {% endif %}
 <div class="page-content">
     <div class="wrapper">
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <article class="main-post" itemscope itemtype="http://schema.org/BlogPosting">
 
-          <header class="post-header">
+        {% assign author = site.data.authors.[page.author] %}
+            {% if author.photo %}
+                <img class="main-post__author-image" src="../../../../{{author.photo}}" alt="">
+            {% endif %}
+
+            <header class="post-header">
             <p class="post-meta">
-                {% if page.author %}By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span> {% endif %}  - <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time></p>
+
+            {% if page.author %} By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span> {% endif %}  - <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time></p>
             <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
 
           </header>

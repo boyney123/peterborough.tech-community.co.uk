@@ -1,0 +1,17 @@
+.main-post{
+  position: relative;
+  .main-post__author-image{
+    position: absolute;
+    width: 140px;
+    top: -80px;
+    right: 40px;
+    padding: 5px;
+    background: #FFF;
+    @include media-query($on-palm) {
+      width: 100px;
+    }
+    @include media-query(500px) {
+      display: none;
+    }
+  }
+}

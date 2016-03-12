@@ -404,10 +404,14 @@ pre {
   font-size: 42px;
   letter-spacing: -1px;
   line-height: 1;
-  margin: 20px 0; }
+  margin: 20px 0;
+  width: 70%; }
   @media screen and (max-width: 800px) {
     .post-title {
       font-size: 36px; } }
+  @media screen and (max-width: 600px) {
+    .post-title {
+      width: 100%; } }
   .post-title:after {
     content: " ";
     display: block;
@@ -669,3 +673,19 @@ pre {
     letter-spacing: 0;
     font-weight: 700;
     font-style: normal; }
+
+.main-post {
+  position: relative; }
+  .main-post .main-post__author-image {
+    position: absolute;
+    width: 140px;
+    top: -80px;
+    right: 40px;
+    padding: 5px;
+    background: #FFF; }
+    @media screen and (max-width: 600px) {
+      .main-post .main-post__author-image {
+        width: 100px; } }
+    @media screen and (max-width: 500px) {
+      .main-post .main-post__author-image {
+        display: none; } }

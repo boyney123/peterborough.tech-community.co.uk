@@ -222,9 +222,14 @@
     letter-spacing: -1px;
     line-height: 1;
     margin:20px 0;
+    width: 70%;
 
     @include media-query($on-laptop) {
         font-size: 36px;
+    }
+
+    @include media-query($on-palm) {
+      width: 100%;
     }
 
     &:after{
