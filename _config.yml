@@ -8,7 +8,7 @@
 # Site settings
 title: Peterborough.tech-community.co.uk
 description: > # this means to ignore newlines until "baseurl:"
-  Free and open source blog for IT professionals in Peterborough. Populated by anybody thats has any kind of interest in IT.
+  Free and open source blog for IT professionals in Peterborough. Populated by anybody that has any kind of interest in IT.
 
   We are always looking for contributors.
 baseurl: "" # the subpath of your site, e.g. /blog
