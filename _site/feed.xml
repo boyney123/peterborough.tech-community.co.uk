@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Peterborough.tech-community.co.uk</title>
-    <description>Free and open source blog for IT professionals in Peterborough. Populated by anybody thats has any kind of interest in IT.
+    <description>Free and open source blog for IT professionals in Peterborough. Populated by anybody that has any kind of interest in IT.
 We are always looking for contributors.
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 12 Mar 2016 12:51:21 +0000</pubDate>
-    <lastBuildDate>Sat, 12 Mar 2016 12:51:21 +0000</lastBuildDate>
+    <pubDate>Mon, 14 Mar 2016 07:32:06 +0000</pubDate>
+    <lastBuildDate>Mon, 14 Mar 2016 07:32:06 +0000</lastBuildDate>
     <generator>Jekyll v3.1.0</generator>
     
       <item>
@@ -21,7 +21,7 @@ We are always looking for contributors.
 
 &lt;p&gt;Very few people would argue that the rapid rise of agile has been a bad thing for quality. Personally, I find that working alongside developers (and even writing code myself) is massively rewarding. However, it can be challenging for a lot of testers, who - for all of agile’s benefits - liked living in the comfort zone of having a validation phase. Requirements were provided clearly up-front; there was plenty of time to extrapolate test cases to validate the requirements into cosy Excel test scripts; and when an issue was encountered during test, the requirements were a non-controversial oracle which they could use to decide if something had passed or failed.&lt;/p&gt;
 
-&lt;p&gt;Because of this, many testers are resistant to change, to the extent that they’re jeapordising their own future career chances, and also holding-back the potential of their current testing team. This is not out of malice, but out of fear, and I’d like to banish a few of those fears with a few simple pieces of advice.&lt;/p&gt;
+&lt;p&gt;Because of this, many testers are resistant to change, to the extent that they’re jeopardising their own future career chances, and also holding-back the potential of their current testing team. This is not out of malice, but out of fear, and I’d like to banish a few of those fears with a few simple pieces of advice.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-grass-really-is-greener-on-the-other-side&quot;&gt;The grass really IS greener on the other side&lt;/h2&gt;
 
