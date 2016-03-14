@@ -18,7 +18,7 @@ In the beginning (or at least for as long as agile practitioners have needed som
 
 Very few people would argue that the rapid rise of agile has been a bad thing for quality. Personally, I find that working alongside developers (and even writing code myself) is massively rewarding. However, it can be challenging for a lot of testers, who - for all of agile's benefits - liked living in the comfort zone of having a validation phase. Requirements were provided clearly up-front; there was plenty of time to extrapolate test cases to validate the requirements into cosy Excel test scripts; and when an issue was encountered during test, the requirements were a non-controversial oracle which they could use to decide if something had passed or failed. 
 
-Because of this, many testers are resistant to change, to the extent that they're jeapordising their own future career chances, and also holding-back the potential of their current testing team. This is not out of malice, but out of fear, and I'd like to banish a few of those fears with a few simple pieces of advice.
+Because of this, many testers are resistant to change, to the extent that they're jeopardising their own future career chances, and also holding-back the potential of their current testing team. This is not out of malice, but out of fear, and I'd like to banish a few of those fears with a few simple pieces of advice.
 
 ## The grass really IS greener on the other side
 
