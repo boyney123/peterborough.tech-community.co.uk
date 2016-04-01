@@ -28,7 +28,7 @@ From my experiences at [Compare The Market](http://www.comparethemarket.com), I'
 
 [Mob programming](http://mobprogramming.org/) (often called mobbing for short) was invented by Woody Zuill, and has been described as "All the brilliant people working on the same thing, at the same time, in the same space, and on the same computer". The first three parts of that sentence are already part of the core tenets of Agile; the addition of having everybody (e.g. developers, testers and business analysts) working on the same computer is its most noticeable difference.
 
-If you're familiar with [pair programming](https://en.wikipedia.org/wiki/Pair_programming) then you'll already know about the roles of the **driver** (blah) and the **navigator** (blah). Mobbing is basically the same, except there are many navigators, and you regularly rotate the person who's the driver (for instance, every 15 minutes).
+If you're familiar with [pair programming](https://en.wikipedia.org/wiki/Pair_programming) then you'll already know about the roles of the **driver** (writing code at the keyboard) and the **navigator** (offering guidance and review). Mobbing is basically the same, except there are many navigators, and you regularly rotate the person who's the driver (for instance, every 15 minutes).
 
 ![One of our mobs in action](http://i.imgur.com/LoHGqfi.jpg)
 
