@@ -2,7 +2,7 @@
 layout: post
 title:  "Mob Programming: Put down the pitchforks and pick up a keyboard"
 cover: http://i.imgur.com/a1kaZPc.jpg
-date:   2016-04-01 08:00:00 +0000
+date:   2016-04-02 08:00:00 +0000
 categories: tech
 subtitle: Mob Programming
 blurb: How mobbing can help you to produce high-quality code, built to do the right thing, which is understood by everybody within the team.
@@ -76,3 +76,7 @@ Before you run off to try mob programming for yourself, here are a few lessons t
 It's easy to get started with mob programming. All you need is a large enough desk, with a good-sized monitor that everybody can see. Then it's just a case of trying it, and finding out whether it works for you.
 
 We've seen that it can be more productive, in the right situations - maybe it will work for you too. Contact myself or Oli if you'd like any tips or assistance on your mobbing adventure!
+
+[Contact Neil via Twitter](https://twitter.com/neilstudd)
+
+[Contact Oli via Twitter](https://twitter.com/owennell)
