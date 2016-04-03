@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Mob Programming: Put down the pitchforks and pick up a keyboard</title>
+  <meta name="description" content="Together with my colleague Oli Wennell, I recently gave a talk at the BGL Technology Conference in Shoreditch, to communicate our team’s love of mob programm...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="canonical" href="http://yourdomain.com/tech/2016/04/02/neil-oli-mob-programming.html">
+  <link rel="alternate" type="application/rss+xml" title="Peterborough.tech-community.co.uk" href="http://yourdomain.com/feed.xml">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Peterborough.tech-community.co.uk</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        <a class="page-link" href="/contribute">Contribute</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    
+<div class="blog-cover" style="background-image:url(http://i.imgur.com/a1kaZPc.jpg);">
+</div>
+
+<div class="page-content">
+    <div class="wrapper">
+        <article class="main-post" itemscope itemtype="http://schema.org/BlogPosting">
+
+        
+            
+                <img class="main-post__author-image" src="../../../..//assets/authors/neil_studd.jpg" alt="">
+            
+
+            <header class="post-header">
+            <p class="post-meta">
+
+             By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Neil Studd</span></span>   - <time datetime="2016-04-02T09:00:00+01:00" itemprop="datePublished">April 02, 2016</time></p>
+            <h1 class="post-title" itemprop="name headline">Mob Programming: Put down the pitchforks and pick up a keyboard</h1>
+
+          </header>
+
+          <div class="post-content" itemprop="articleBody">
+            <p>Together with my colleague <a href="https://twitter.com/owennell">Oli Wennell</a>, I recently gave a talk at the BGL Technology Conference in Shoreditch, to communicate our team’s love of mob programming. <a href="http://www.slideshare.net/NeilStudd1/mob-programming-put-down-the-pitchforks-and-pick-up-a-keyboard">The slides are available online</a> but there’s not a lot of context on there, so I’ve written this article to bring its message to a wider audience!</p>
+
+<h2 id="the-challenges-that-we-all-face">The challenges that we all face</h2>
+
+<p>When I’m working within agile teams, or talking to those who do, I often hear many of the same issues being raised repeatedly at retrospectives. Common recurring issues include:</p>
+
+<ul>
+  <li><strong>Information silos:</strong> Specialist knowledge is known by only a few members of the team. We often express our desire to break down these silos by pairing and sharing, but inevitably when we’re up against tight deadlines (when are we not?), we fall-back to giving tasks to the person who knows the code best.</li>
+  <li><strong>Too many meetings:</strong> Even when we’re calling ourselves agile, we’re often drowning in meetings and ceremonies. There are story kick-off and review meetings, which often involve complex discussions around requirements and architecture, which everyone forgets as soon as they leave the room. The answer? More meetings!</li>
+  <li><strong>Waiting for questions to be answered:</strong> Once we’ve started to work on a task, inevitably we’ll reach a point where we need clarification from a key stakeholder. Depending on who this is, and which office (or timezone!) they’re working in, it may take hours (or even days) to get an answer. So we switch to a different task, and then switch back again once we get an answer, incurring context-switching penalties along the way. Wouldn’t it be nice if we could remove the need to have a long wait for answers?</li>
+  <li><strong>Testing and reviewing too late:</strong> Many agile teams are actually working in a series of mini-waterfalls. Story kick-offs are the requirements-gathering session; then the developers implement the feature; then they throw it “over the wall” to the testers for verification. One of the key goals of agile is to have people of all disciplines working together at the same time, so it’s frustrating when a team devolves back to a production-line mentality.</li>
+  <li><strong>Inconsistent coding practices:</strong> Have you ever looked at a piece of code, and you’ve known who’s written it without even looking at the history or comments? Everybody has their own style, which creates inconsistency in the codebase, adding to the pile of technical debt that you’ll never have time to fix.</li>
+</ul>
+
+<p>From my experiences at <a href="http://www.comparethemarket.com">Compare The Market</a>, I’ve found that all of these pain-points can be reduced greatly if you’re willing to embrace the power of mob programming.</p>
+
+<h2 id="what-is-mob-programming">What is mob programming?</h2>
+
+<p><a href="http://mobprogramming.org/">Mob programming</a> (often called mobbing for short) was invented by Woody Zuill, and has been described as “All the brilliant people working on the same thing, at the same time, in the same space, and on the same computer”. The first three parts of that sentence are already part of the core tenets of Agile; the addition of having everybody (e.g. developers, testers and business analysts) working on the same computer is its most noticeable difference.</p>
+
+<p>If you’re familiar with <a href="https://en.wikipedia.org/wiki/Pair_programming">pair programming</a> then you’ll already know about the roles of the <strong>driver</strong> (writing code at the keyboard) and the <strong>navigator</strong> (offering guidance and review). Mobbing is basically the same, except there are many navigators, and you regularly rotate the person who’s the driver (for instance, every 15 minutes).</p>
+
+<p><img src="http://i.imgur.com/LoHGqfi.jpg" alt="One of our mobs in action" /></p>
+
+<p>It’s essential to have a centrally-located monitor which anybody is capable of plugging-into or projecting onto. Ideally, everybody should have a similar setup: for example, equivalent Visual Studio / Resharper settings, the same keyboard shortcuts and environment settings, so that anybody can drive from anybody’s machine and have much the same experience.</p>
+
+<p>Critics of mob programming say that it’s inefficient and wasteful - with only one person writing code at a time, how can this possibly offer value? Well, there’s much more to programming than actually writing code:</p>
+
+<ul>
+  <li>Analysing and clarifying requirements</li>
+  <li>Deciding how you’re going to solve a problem</li>
+  <li>Making architectural decisions</li>
+  <li>Creating examples/scenarios to drive a TDD approach</li>
+  <li>Implementing a simple “walking skeleton” version</li>
+  <li>Deciding on whether your first approach is fit-for-purpose</li>
+  <li>Agreeing what should be refactored</li>
+  <li>Reviewing the solution with stakeholders</li>
+</ul>
+
+<p>These activities require very little writing of code; however, they all require a lot of discussions between people of different disciplines. When you’re working in a mob environment, all of those people are already in the same place, allowing for faster decision-making and developing a group consensus in the moment.</p>
+
+<h2 id="how-does-mobbing-help">How does mobbing help?</h2>
+
+<p>There are a number of notable benefits to adopting a mob programming approach. In no particular order, here’s a few of them - each person will probably have their own favourite, depending on which is causing them the most pain at the moment!</p>
+
+<p>Mobbing removes the pain and stress of code reviews, as all of the code is being reviewed as it’s written. You’ll also experience an equivalent boost in code consistency, as the group gradually adopts a common approach on often-contentious subjects such as indentations and linebreaks.</p>
+
+<p>It’s not just code quality which improves; the constant review process means that discussion and debate occurs at the moment when the work is fresh in the group’s mind, rather than those annoying “What were we thinking?” conversations which might otherwise happen weeks later.</p>
+
+<p>With everybody working on the same code at the same time, knowledge sharing becomes a natural by-product of the mobbing process. This makes mobbing particularly useful for “spikes” and other work which will be the foundation of future user stories, because it means that anybody can pick up the next user story and already have a grounding in what’s been done.</p>
+
+<p>Mob programming is also an incredibly inclusive process, open to people of varying disciplines. It’s a great learning environment - “learning by doing” is often the most efficient way to gain knowledge, and for would-be developers (like myself, a tester by trade) it’s allowed me to write production code in a safe environment with the support of my colleagues, and I’ve picked up more skills than I would’ve done by reading textbooks.</p>
+
+<h2 id="watch-out-for-potential-pitfalls">Watch out for potential pitfalls</h2>
+
+<p>Before you run off to try mob programming for yourself, here are a few lessons that we’ve learned through our mobbing activities. Arm yourselves with these, and you’ll have a very good chance of success!</p>
+
+<ul>
+  <li><strong>Not every task is suited to mobbing:</strong> You don’t need a large group of navigators to help you with your timesheet, or to complete mundane, prescriptive tasks. That’s OK - we’re not saying that mob programming is the only way of working. When we start a user story, we evaluate whether it might be appropriate to mob on it. If it’s not, then we don’t!</li>
+  <li><strong>Don’t be afraid to split the mob:</strong> Once you’ve started mobbing, don’t feel that you’re locked-in to this way of working. If it turns out that the task isn’t going anywhere, break away until you feel ready to progress. Speaking of which…</li>
+  <li><strong>Beware of rabbit holes:</strong> If you’re working on your own, burning 10 minutes on an unrelated investigation might not be a big deal, but if you’ve got 6-7 people in that rabbit hole with you, that investigation has effectively burned over an hour of the team’s time. Try keeping a sidebar or a “To Do” list, to allow you to stay focused on the current activity.</li>
+  <li><strong>Don’t make one person drive for too long:</strong> Just like in a car, driving is an intense activity which requires immense concentration, and if you try to do it for too long then you’re going to become prone to mistakes and headaches! Rotate the driver regularly, by either using a timer or rotating whenever you get to a natural changeover point (e.g. all of the tests are passing).</li>
+  <li><strong>Support the driver:</strong> Just because the driver is front and centre, it doesn’t mean that the navigators get to switch off. They are the eyes and ears of the group, staying heads-up to guide the driver, and doing whatever is necessary to allow them to stay focused on the keyboard. It’s not a time for going off to meetings, or to get into a lengthy email discussion. You might be missing an important bit of discussion, and before you know it, you’re going to be at the keyboard again.</li>
+  <li><strong>Mobbing requires trust:</strong> Having somebody watching you code can be a stressful experience. How many more mistakes or typos do you make when there’s someone looking over your shoulder? Scale that up to multiple navigators watching you, and you’ll need to ensure that you have a safe, trusting environment which allows every team member to be in the limelight without fear of reproach.</li>
+  <li><strong>You can’t force a team to work like this:</strong> Everything we’ve discussed above - trust, openness and freedom of communication - comes with time. Newly-formed teams, or new employees being dropped into an existing team, will need to learn each other’s boundaries, so that they are comfortable discussing and debating with each other. Don’t throw the entire team in at the deep end: run smaller mobbing experiments to begin with, and run frequent retrospectives, to learn what is (or isn’t) working for you.</li>
+</ul>
+
+<h2 id="whats-stopping-you">What’s stopping you?</h2>
+
+<p>It’s easy to get started with mob programming. All you need is a large enough desk, with a good-sized monitor that everybody can see. Then it’s just a case of trying it, and finding out whether it works for you.</p>
+
+<p>We’ve seen that it can be more productive, in the right situations - maybe it will work for you too. Contact myself or Oli if you’d like any tips or assistance on your mobbing adventure!</p>
+
+<p><a href="https://twitter.com/neilstudd">Contact Neil via Twitter</a></p>
+
+<p><a href="https://twitter.com/owennell">Contact Oli via Twitter</a></p>
+
+          </div>
+          <div class="post-share">
+              <h4>SHARE</h4>
+              <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                  <a class="a2a_button_facebook"></a>
+                  <a class="a2a_button_twitter"></a>
+                  <a class="a2a_button_linkedin"></a>
+                  <a class="a2a_button_google_plus"></a>
+              </div>
+              <script async src="https://static.addtoany.com/menu/page.js"></script>
+          </div>
+
+        <footer class="post-footer">
+            <p>Peterborough.tech-community is an free and open source project.</p>
+            <p>Do you have something to share? Could you contribute to Peterborough.tech-community.co.uk?</p>
+            <p>We are <strong>always</strong> looking for contributors and contributing is <strong>simple.</strong></p>
+            <span class="github-contribute"><a href='/contribute' class="button button-primary">Contribute</a></span>
+        </footer>
+
+        </article>
+
+
+
+        <section>
+            <div id="disqus_thread"></div>
+<script>
+    /**
+     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+     var disqus_config = function () {
+     this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+     };
+     */
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+
+        s.src = '//peterboroughtechcommunity.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </section>
+    </div>
+</div>
+
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Peterborough.tech-community.co.uk</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p>Free and open source blog for IT professionals in Peterborough. Populated by anybody that has any kind of interest in IT.
+We are always looking for contributors.
+</p>
+          <a href="https://github.com/boyney123/peterborough.tech-community.co.uk"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">peterborough.tech-community.co.uk</span></a>
+
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-73070461-2', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+  </body>
+
+</html>
