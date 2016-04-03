@@ -7,9 +7,97 @@ We are always looking for contributors.
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 14 Mar 2016 21:02:07 +0000</pubDate>
-    <lastBuildDate>Mon, 14 Mar 2016 21:02:07 +0000</lastBuildDate>
+    <pubDate>Sun, 03 Apr 2016 15:54:35 +0100</pubDate>
+    <lastBuildDate>Sun, 03 Apr 2016 15:54:35 +0100</lastBuildDate>
     <generator>Jekyll v3.1.0</generator>
+    
+      <item>
+        <title>Mob Programming: Put down the pitchforks and pick up a keyboard</title>
+        <description>&lt;p&gt;Together with my colleague &lt;a href=&quot;https://twitter.com/owennell&quot;&gt;Oli Wennell&lt;/a&gt;, I recently gave a talk at the BGL Technology Conference in Shoreditch, to communicate our team’s love of mob programming. &lt;a href=&quot;http://www.slideshare.net/NeilStudd1/mob-programming-put-down-the-pitchforks-and-pick-up-a-keyboard&quot;&gt;The slides are available online&lt;/a&gt; but there’s not a lot of context on there, so I’ve written this article to bring its message to a wider audience!&lt;/p&gt;
+
+&lt;h2 id=&quot;the-challenges-that-we-all-face&quot;&gt;The challenges that we all face&lt;/h2&gt;
+
+&lt;p&gt;When I’m working within agile teams, or talking to those who do, I often hear many of the same issues being raised repeatedly at retrospectives. Common recurring issues include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Information silos:&lt;/strong&gt; Specialist knowledge is known by only a few members of the team. We often express our desire to break down these silos by pairing and sharing, but inevitably when we’re up against tight deadlines (when are we not?), we fall-back to giving tasks to the person who knows the code best.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Too many meetings:&lt;/strong&gt; Even when we’re calling ourselves agile, we’re often drowning in meetings and ceremonies. There are story kick-off and review meetings, which often involve complex discussions around requirements and architecture, which everyone forgets as soon as they leave the room. The answer? More meetings!&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Waiting for questions to be answered:&lt;/strong&gt; Once we’ve started to work on a task, inevitably we’ll reach a point where we need clarification from a key stakeholder. Depending on who this is, and which office (or timezone!) they’re working in, it may take hours (or even days) to get an answer. So we switch to a different task, and then switch back again once we get an answer, incurring context-switching penalties along the way. Wouldn’t it be nice if we could remove the need to have a long wait for answers?&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Testing and reviewing too late:&lt;/strong&gt; Many agile teams are actually working in a series of mini-waterfalls. Story kick-offs are the requirements-gathering session; then the developers implement the feature; then they throw it “over the wall” to the testers for verification. One of the key goals of agile is to have people of all disciplines working together at the same time, so it’s frustrating when a team devolves back to a production-line mentality.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Inconsistent coding practices:&lt;/strong&gt; Have you ever looked at a piece of code, and you’ve known who’s written it without even looking at the history or comments? Everybody has their own style, which creates inconsistency in the codebase, adding to the pile of technical debt that you’ll never have time to fix.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;From my experiences at &lt;a href=&quot;http://www.comparethemarket.com&quot;&gt;Compare The Market&lt;/a&gt;, I’ve found that all of these pain-points can be reduced greatly if you’re willing to embrace the power of mob programming.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-mob-programming&quot;&gt;What is mob programming?&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mobprogramming.org/&quot;&gt;Mob programming&lt;/a&gt; (often called mobbing for short) was invented by Woody Zuill, and has been described as “All the brilliant people working on the same thing, at the same time, in the same space, and on the same computer”. The first three parts of that sentence are already part of the core tenets of Agile; the addition of having everybody (e.g. developers, testers and business analysts) working on the same computer is its most noticeable difference.&lt;/p&gt;
+
+&lt;p&gt;If you’re familiar with &lt;a href=&quot;https://en.wikipedia.org/wiki/Pair_programming&quot;&gt;pair programming&lt;/a&gt; then you’ll already know about the roles of the &lt;strong&gt;driver&lt;/strong&gt; (writing code at the keyboard) and the &lt;strong&gt;navigator&lt;/strong&gt; (offering guidance and review). Mobbing is basically the same, except there are many navigators, and you regularly rotate the person who’s the driver (for instance, every 15 minutes).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/LoHGqfi.jpg&quot; alt=&quot;One of our mobs in action&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s essential to have a centrally-located monitor which anybody is capable of plugging-into or projecting onto. Ideally, everybody should have a similar setup: for example, equivalent Visual Studio / Resharper settings, the same keyboard shortcuts and environment settings, so that anybody can drive from anybody’s machine and have much the same experience.&lt;/p&gt;
+
+&lt;p&gt;Critics of mob programming say that it’s inefficient and wasteful - with only one person writing code at a time, how can this possibly offer value? Well, there’s much more to programming than actually writing code:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Analysing and clarifying requirements&lt;/li&gt;
+  &lt;li&gt;Deciding how you’re going to solve a problem&lt;/li&gt;
+  &lt;li&gt;Making architectural decisions&lt;/li&gt;
+  &lt;li&gt;Creating examples/scenarios to drive a TDD approach&lt;/li&gt;
+  &lt;li&gt;Implementing a simple “walking skeleton” version&lt;/li&gt;
+  &lt;li&gt;Deciding on whether your first approach is fit-for-purpose&lt;/li&gt;
+  &lt;li&gt;Agreeing what should be refactored&lt;/li&gt;
+  &lt;li&gt;Reviewing the solution with stakeholders&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These activities require very little writing of code; however, they all require a lot of discussions between people of different disciplines. When you’re working in a mob environment, all of those people are already in the same place, allowing for faster decision-making and developing a group consensus in the moment.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-does-mobbing-help&quot;&gt;How does mobbing help?&lt;/h2&gt;
+
+&lt;p&gt;There are a number of notable benefits to adopting a mob programming approach. In no particular order, here’s a few of them - each person will probably have their own favourite, depending on which is causing them the most pain at the moment!&lt;/p&gt;
+
+&lt;p&gt;Mobbing removes the pain and stress of code reviews, as all of the code is being reviewed as it’s written. You’ll also experience an equivalent boost in code consistency, as the group gradually adopts a common approach on often-contentious subjects such as indentations and linebreaks.&lt;/p&gt;
+
+&lt;p&gt;It’s not just code quality which improves; the constant review process means that discussion and debate occurs at the moment when the work is fresh in the group’s mind, rather than those annoying “What were we thinking?” conversations which might otherwise happen weeks later.&lt;/p&gt;
+
+&lt;p&gt;With everybody working on the same code at the same time, knowledge sharing becomes a natural by-product of the mobbing process. This makes mobbing particularly useful for “spikes” and other work which will be the foundation of future user stories, because it means that anybody can pick up the next user story and already have a grounding in what’s been done.&lt;/p&gt;
+
+&lt;p&gt;Mob programming is also an incredibly inclusive process, open to people of varying disciplines. It’s a great learning environment - “learning by doing” is often the most efficient way to gain knowledge, and for would-be developers (like myself, a tester by trade) it’s allowed me to write production code in a safe environment with the support of my colleagues, and I’ve picked up more skills than I would’ve done by reading textbooks.&lt;/p&gt;
+
+&lt;h2 id=&quot;watch-out-for-potential-pitfalls&quot;&gt;Watch out for potential pitfalls&lt;/h2&gt;
+
+&lt;p&gt;Before you run off to try mob programming for yourself, here are a few lessons that we’ve learned through our mobbing activities. Arm yourselves with these, and you’ll have a very good chance of success!&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Not every task is suited to mobbing:&lt;/strong&gt; You don’t need a large group of navigators to help you with your timesheet, or to complete mundane, prescriptive tasks. That’s OK - we’re not saying that mob programming is the only way of working. When we start a user story, we evaluate whether it might be appropriate to mob on it. If it’s not, then we don’t!&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Don’t be afraid to split the mob:&lt;/strong&gt; Once you’ve started mobbing, don’t feel that you’re locked-in to this way of working. If it turns out that the task isn’t going anywhere, break away until you feel ready to progress. Speaking of which…&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Beware of rabbit holes:&lt;/strong&gt; If you’re working on your own, burning 10 minutes on an unrelated investigation might not be a big deal, but if you’ve got 6-7 people in that rabbit hole with you, that investigation has effectively burned over an hour of the team’s time. Try keeping a sidebar or a “To Do” list, to allow you to stay focused on the current activity.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Don’t make one person drive for too long:&lt;/strong&gt; Just like in a car, driving is an intense activity which requires immense concentration, and if you try to do it for too long then you’re going to become prone to mistakes and headaches! Rotate the driver regularly, by either using a timer or rotating whenever you get to a natural changeover point (e.g. all of the tests are passing).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Support the driver:&lt;/strong&gt; Just because the driver is front and centre, it doesn’t mean that the navigators get to switch off. They are the eyes and ears of the group, staying heads-up to guide the driver, and doing whatever is necessary to allow them to stay focused on the keyboard. It’s not a time for going off to meetings, or to get into a lengthy email discussion. You might be missing an important bit of discussion, and before you know it, you’re going to be at the keyboard again.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Mobbing requires trust:&lt;/strong&gt; Having somebody watching you code can be a stressful experience. How many more mistakes or typos do you make when there’s someone looking over your shoulder? Scale that up to multiple navigators watching you, and you’ll need to ensure that you have a safe, trusting environment which allows every team member to be in the limelight without fear of reproach.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;You can’t force a team to work like this:&lt;/strong&gt; Everything we’ve discussed above - trust, openness and freedom of communication - comes with time. Newly-formed teams, or new employees being dropped into an existing team, will need to learn each other’s boundaries, so that they are comfortable discussing and debating with each other. Don’t throw the entire team in at the deep end: run smaller mobbing experiments to begin with, and run frequent retrospectives, to learn what is (or isn’t) working for you.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;whats-stopping-you&quot;&gt;What’s stopping you?&lt;/h2&gt;
+
+&lt;p&gt;It’s easy to get started with mob programming. All you need is a large enough desk, with a good-sized monitor that everybody can see. Then it’s just a case of trying it, and finding out whether it works for you.&lt;/p&gt;
+
+&lt;p&gt;We’ve seen that it can be more productive, in the right situations - maybe it will work for you too. Contact myself or Oli if you’d like any tips or assistance on your mobbing adventure!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/neilstudd&quot;&gt;Contact Neil via Twitter&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/owennell&quot;&gt;Contact Oli via Twitter&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 02 Apr 2016 09:00:00 +0100</pubDate>
+        <link>http://yourdomain.com/tech/2016/04/02/neil-oli-mob-programming.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/tech/2016/04/02/neil-oli-mob-programming.html</guid>
+        
+        
+        <category>tech</category>
+        
+      </item>
     
       <item>
         <title>A new world for testers</title>
